@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E560EA16213F9FCD00136498 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E560EA15213F9FCD00136498 /* AddTaskViewController.swift */; };
 		E5F2D355213DDEF10035AFCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2D354213DDEF10035AFCD /* AppDelegate.swift */; };
 		E5F2D357213DDEF10035AFCD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F2D356213DDEF10035AFCD /* ViewController.swift */; };
-		E5F2D35A213DDEF10035AFCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2D358213DDEF10035AFCD /* Main.storyboard */; };
+		E5F2D35A213DDEF10035AFCD /* MiniTasks.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2D358213DDEF10035AFCD /* MiniTasks.storyboard */; };
 		E5F2D35C213DDEF40035AFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5F2D35B213DDEF40035AFCD /* Assets.xcassets */; };
 		E5F2D35F213DDEF40035AFCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5F2D35D213DDEF40035AFCD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E560EA15213F9FCD00136498 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		E5F2D351213DDEF10035AFCD /* MiniTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5F2D354213DDEF10035AFCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5F2D356213DDEF10035AFCD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E5F2D359213DDEF10035AFCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5F2D359213DDEF10035AFCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MiniTasks.storyboard; sourceTree = "<group>"; };
 		E5F2D35B213DDEF40035AFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5F2D35E213DDEF40035AFCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5F2D360213DDEF40035AFCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,10 +58,11 @@
 			children = (
 				E5F2D354213DDEF10035AFCD /* AppDelegate.swift */,
 				E5F2D356213DDEF10035AFCD /* ViewController.swift */,
-				E5F2D358213DDEF10035AFCD /* Main.storyboard */,
+				E5F2D358213DDEF10035AFCD /* MiniTasks.storyboard */,
 				E5F2D35B213DDEF40035AFCD /* Assets.xcassets */,
 				E5F2D35D213DDEF40035AFCD /* LaunchScreen.storyboard */,
 				E5F2D360213DDEF40035AFCD /* Info.plist */,
+				E560EA15213F9FCD00136498 /* AddTaskViewController.swift */,
 			);
 			path = MiniTasks;
 			sourceTree = "<group>";
@@ -124,7 +127,7 @@
 			files = (
 				E5F2D35F213DDEF40035AFCD /* LaunchScreen.storyboard in Resources */,
 				E5F2D35C213DDEF40035AFCD /* Assets.xcassets in Resources */,
-				E5F2D35A213DDEF10035AFCD /* Main.storyboard in Resources */,
+				E5F2D35A213DDEF10035AFCD /* MiniTasks.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5F2D357213DDEF10035AFCD /* ViewController.swift in Sources */,
+				E560EA16213F9FCD00136498 /* AddTaskViewController.swift in Sources */,
 				E5F2D355213DDEF10035AFCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,12 +147,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E5F2D358213DDEF10035AFCD /* Main.storyboard */ = {
+		E5F2D358213DDEF10035AFCD /* MiniTasks.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E5F2D359213DDEF10035AFCD /* Base */,
 			);
-			name = Main.storyboard;
+			name = MiniTasks.storyboard;
 			sourceTree = "<group>";
 		};
 		E5F2D35D213DDEF40035AFCD /* LaunchScreen.storyboard */ = {
