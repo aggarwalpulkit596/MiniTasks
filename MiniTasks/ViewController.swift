@@ -10,6 +10,8 @@ import UIKit
 
 var taskArray = [String]()
 var datesArray = [String]()
+let defaults = UserDefaults.standard
+
 
 class ViewController: UIViewController,UITableViewDataSource {
 
@@ -18,6 +20,8 @@ class ViewController: UIViewController,UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.dataSource = self
+        taskArray = defaults.stringArray(forKey: "taskArray") ?? [String]()
+        datesArray = defaults.stringArray(forKey: "datesArray") ?? [String]()
 
     }
     
@@ -32,7 +36,8 @@ class ViewController: UIViewController,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
-        cell.textLabel?.text = taskArray[indexPath.row]
+        cell.textLabel?.text = "\(indexPath.row + 1). \(taskArray[indexPath.row])"
+        cell.detailTextLabel?.text = datesArray[indexPath.row]
         return cell
     }
     

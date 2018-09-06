@@ -77,6 +77,8 @@ class AddTaskViewController: UIViewController,UIPickerViewDelegate,UIPickerViewD
         
         taskArray.append(selectedTask)
         datesArray.append(dateStr)
+        defaults.set(taskArray, forKey: "taskArray")
+        defaults.set(datesArray, forKey: "datesArray")
         
         dismiss(animated: true, completion: nil)
     }
